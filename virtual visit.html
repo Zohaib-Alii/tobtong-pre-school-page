@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link rel="stylesheet" href="tailwind.css">
+    <title>Virtual Vist</title>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <nav
+      class="
+        top-0
+        absolute
+        z-50
+        w-full
+        flex flex-wrap
+        items-center
+        justify-between
+        px-2
+        py-2
+        bg-white
+        heading
+      "
+    >
+      <div
+        class="
+          container
+          px-4
+          mx-auto
+          flex flex-wrap
+          items-center
+          justify-between
+          
+        "
+      >
+        <div
+          class="
+            w-full
+            relative
+            flex
+            justify-between
+            lg:w-auto
+            lg:static
+            lg:block
+            lg:justify-start
+          "
+        >
+          <a
+            class="
+              text-sm
+              font-bold
+              leading-relaxed
+              inline-block
+              whitespace-nowrap
+              uppercase
+              text-white
+            "
+            href="/"
+            ><img
+              alt="..."
+              src="./assets/img/logo-1.png"
+              class="max-w-full mx-auto"
+              style="max-width: 200px" /></a
+          ><button
+            class="
+              cursor-pointer
+              text-xl
+              leading-none
+              px-3
+              py-1
+              border border-solid border-transparent
+              rounded
+              bg-transparent
+              block
+              lg:hidden
+              outline-none
+              focus:outline-none
+            "
+            type="button"
+            onclick="toggleNavbar('example-collapse-navbar')"
+          >
+            <i class="text-white fas fa-bars"></i>
+          </button>
+        </div>
+        <div
+          class="
+            lg:flex
+            flex-grow
+            items-center
+            bg-white
+            lg:bg-transparent
+            lg:shadow-none
+            hidden
+          "
+          id="example-collapse-navbar"
+        >
+          <ul class="flex flex-col lg:flex-row list-none mr-auto">
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-white
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xl
+                  uppercase
+                  font-bold
+                "
+                href="/"
+              >
+              </a>
+            </li>
+          </ul>
+          <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-pink
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xl
+                  uppercase
+                
+                  color
+                "
+                href="/"
+                >ประสบการณ์สอนกว่า 50 ปี<span class="lg:hidden inline-block ml-2"
+                  >Share</span
+                ></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-pink
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xl
+                  uppercase
+                  
+                  color
+                "
+                href="/"
+                >การเรียนการสอน<span class="lg:hidden inline-block ml-2"
+                  >Tweet</span
+                ></a
+              >
+            </li>
+            <a
+                class="
+                  lg:text-pink
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xl
+                  uppercase
+                  color
+                "
+                href="/"
+                >หลักสูตรการสอน<span class="lg:hidden inline-block ml-2"
+                  >Tweet</span
+                ></a
+              >
+            </li>
+
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-white
+                  lg:hover:text-gray-300
+                  text-gray-800
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xs
+                  uppercase
+                  font-bold
+                  
+                "
+                href="#pablo"
+                ><i
+                  class="
+                    lg:text-gray-300
+                    text-gray-500
+                    fas
+                    fa-globe
+                    text-3xl
+
+                    leading-lg
+                    color
+                  "
+                ></i
+                ><span class="lg:hidden inline-block ml-2">Star</span></a
+              >
+            </li>
+            <li class="flex items-center">
+              <a
+                class="
+                  lg:text-white
+                  lg:hover:text-gray-300
+                  px-3
+                  py-4
+                  lg:py-2
+                  flex
+                  items-center
+                  text-xs
+                  uppercase
+                  font-bold
+                "
+                href="#pablo"
+                ><i
+                  class="
+                    lg:text-gray-300
+                    color
+                    fas
+                    fa-bars
+                    text-3xl
+                    leading-lg w-16
+                  "
+                ></i
+                >
+                <span class="lg:hidden inline-block ml-2">Star</span></a
+              >
+            </li>
+           
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div
+        class="
+          relative
+          pt-16
+          pb-32
+          flex
+          content-center
+          items-center
+          justify-center
+        "
+        style="min-height: 75vh"
+      >
+        <div
+          class="absolute mt-16 top-0 w-full h-full bg-center bg-cover"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80');
+          "
+        >
+        </div>
+        <div
+          class="
+            top-auto
+            bottom-0
+            left-0
+            right-0
+            w-full
+            absolute
+            pointer-events-none
+            overflow-hidden
+          "
+          style="height: 70px"
+        >
+        </div>
+      </div>
+     
+       <div
+          class="absolute mt-16 top-0 w-full  "
+          style="
+            background-image: url('./assets/img/Mask\ Group\ 20.png');
+            height: 120px;
+            margin-top: 470px;
+          "
+        >
+        
+        </div> 
+      <section class=" mt-20 pt-6">
+        <div class="container heading mx-auto px-4 w-10/12 ">
+          <div class="flex flex-wrap ">
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div 
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  bg-white
+                  w-full
+                  mb-8
+                  shadow-lg
+                "
+              >
+                <div class=" flex-auto" style="background-color: #81724C; color: white;">
+                  <div class="px-4 py-2  w-full h-full bg-center bg-cover" style="
+                  background-image: url('./assets/img/Mask\ Group\ 20.png');
+                  height: 100%;
+                ">
+                  <div
+                    class="
+                    flex
+                      text-white
+                      p-3
+                      text-center
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-24
+                      h-8
+                      mt-3
+                      mb-3 
+                    ">
+                    <img
+        alt="..."
+        src="./assets/img/Page-1.png"
+        class=" max-w-full mx-auto"
+        style="max-width: 35px"
+      />
+        <h1 class="ml-4">ห้องเสมือน 360</h1>
+      </div>
+                </div>
+              </div></div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div 
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  bg-white
+                  w-full
+                  mb-8
+                  shadow-lg
+                "
+              >
+                <div class="flex-auto" style="background-color: #81724C; color: white;">
+                  <div class="px-4 py-2  w-full h-full bg-center bg-cover" style="
+                  background-image: url('./assets/img/Mask\ Group\ 20.png');
+                  height: 100%;
+                ">
+                  <div
+                    class="
+                    flex
+                      text-white
+                      p-3
+                      text-center
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-24
+                      h-8
+                      mt-3
+                      mb-3 
+                    ">
+                    <img
+        alt="..."
+        src="./assets/img/newspaper.png"
+        class=" max-w-full mx-auto"
+        style="max-width: 35px"
+      />
+        <!-- <i class="fas fa-tablet-alt"></i> -->
+        <h1 class="ml-4">ข่าว & กิจกรรม</h1>
+      </div></div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 text-center">
+              <div 
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  bg-white
+                  w-full
+                  mb-8
+                  shadow-lg
+                "
+              >
+                <div class=" flex-auto" style="background-color: #81724C; color: white;">
+                  <div class="px-4 py-2  w-full h-full bg-center bg-cover" style="
+                  background-image: url('./assets/img/Mask\ Group\ 20.png');
+                  height: 100%;
+                ">
+                  <div
+                    class="
+                    flex
+                      text-white
+                      p-3
+                      text-center
+                      inline-flex
+                      items-center
+                      justify-center
+                      w-24
+                      h-8
+                      mt-3
+                      mb-3 
+                    "
+                    >
+                    <img
+        alt="..."
+        src="./assets/img/map.png"
+        class=" max-w-full mx-auto"
+        style="max-width: 35px"
+      />
+        
+        <h1 class="ml-4">ติดต่อเรา</h1>
+      </div>
+                </div></div>
+              </div>
+            </div>
+          </div>
+<!-- 3 main icons start -->
+<div class="flex flex-wrap mt-16">
+  
+  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
+    <a href="/">
+      <div class="px-6">
+        <img
+          alt="..."
+          src="./assets/img/school.png"
+          class=" max-w-full mx-auto"
+          style="max-width: 120px"
+        />
+        <div class="pt-6 text-center ">
+          <h5 class="color text-xl font-bold">เยี่ยมชมทับทอง</h5>
+          <img
+          alt="..."
+          src="./assets/img/underline.png"
+          class=" max-w-full mx-auto"
+          style="max-width: 120px"
+        />
+        </div>
+      </div>
+    </a>  
+  </div>
+  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
+    <a href="/">
+      <div class="px-6">
+        <img
+          alt="..."
+          src="./assets/img/abc-block (1).png"
+          class=" max-w-full mx-auto"
+          style="max-width: 120px; min-height: 96px;"
+        />
+        <div class="pt-6 text-center">
+          <h5 class="text-xl font-bold text-gray-400">ระดับอนุบาล</h5>
+          
+        </div>
+      </div>
+    </a>  
+  </div>
+  <div class="w-full md:w-6/12 lg:w-4/12 lg:mb-0 mb-12 px-4">
+    <a href="">
+      <div class="px-6">
+        <img
+          alt="..."
+          src="./assets/img/book (1).png"
+          class=" max-w-full mx-auto"
+          style="max-width: 120px"
+        />
+        <div class="pt-6 text-center">
+          <h5 class="text-xl font-bold text-gray-400">ระดับประถม</h5>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+<!-- 3 main icons end -->
+<!-- main images sec start -->
+<div class="flex flex-wrap items-center mt-32">
+  <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+    <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+                  
+                </blockquote>
+              </div>
+            </div>
+            <!-- 2 start-->
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+                  
+                </blockquote>
+              </div>
+            </div>
+            
+            <!-- 2nd end -->
+            
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+                  
+                </blockquote>
+              </div>
+              
+            </div>
+            <!-- 3rd end -->
+            <!-- 4nd stat -->
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+                  
+                </blockquote>
+              </div>
+              
+            </div>
+            <!-- 4nd end -->
+            <!-- 5th start -->
+            
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+                  
+                </blockquote>
+              </div>
+              
+            </div>
+            <!-- 5th end -->
+            <!-- 6th start -->
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+                  
+                </blockquote>
+              </div>
+              
+            </div>
+            <!-- 6th end -->
+            <!-- 7th staart -->
+            
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+                  
+                </blockquote>
+              </div>
+              
+            </div>
+            <!-- 7th end -->
+            <!-- 8th start -->
+            
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  class="w-full align-middle "
+                />
+                <blockquote class="relative p-4 mb-2 shadow" >
+                  <svg
+                    preserveAspectRatio="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 583 95"
+                    class="absolute left-0 w-full block"
+                    style="height: 95px; top: -94px"
+                  >
+                    
+                  </svg>
+                  <h4 class="text-xl font-bold text-white text-center 
+                " style="color: #989131;">
+                บริเวณโรงเรียน
+                  </h4>
+              </div>
+              
+            </div>
+            <!-- 8th end -->
+           
+            <!-- 9th start -->
+            
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+              <div
+                class="
+                  relative
+                  flex flex-col
+                  min-w-0
+                  break-words
+                  w-full
+                  mb-6
+                "
+              >
+                <img
+                  alt="..."
+                  src="./assets/img/NoPath - Copy (41).png"
+                  class="w-full align-middle shadow"
+                  style="min-height: 150px;"
+                />
+                
+              </div>
+              
+            </div>
+          </div>
+        </div>
+            <!-- 9th end -->
+<!-- main images sec end -->
+<!-- sponcers sec staart -->
+  <div
+    class="
+      relative
+     "
+    style="min-height: 35vh"
+  >
+  <div
+    class="absolute mt-16 top-0 w-full  "
+    style="
+      background-image: url('./assets/img/Mask\ Group\ 20.png');
+      border-left: 14px solid rgb(99, 94, 94);
+      border-right: 8px solid #E3E8EE;
+      height: 100%;
+    "
+    > 
+    <div class="sponcers-sec  w-10/12 mr-auto ml-auto">
+      <div class="flex
+        content-center
+        items-center
+        justify-center color font-bold text-xl ">
+        <h1 class="heading">พันธมิตร</h1>
+      </div>
+      <!-- 8th start -->
+            
+      <div class="w-full md:w-4/12 flex justify-between " style="width: 100%;">
+        <div
+          class="
+            relative
+            flex flex-col
+            min-w-0
+            break-words
+            w-full 
+          "
+        >
+          <div class=" flex px-6 ">
+            <div class="container w-full icons  flex justify-between mt-8 ">
+              <a href="/" style="width: 12%; ;"><img  src="./assets/img/cambridge-assessment-logo-footer.png" alt=""></a>
+              <a style="width: 10%;  " href="/"><img src="./assets/img/Natgeo_Kids_logo.svg.png" alt=""></a>
+              <a style="width: 10%;  " href="/"><img src="./assets/img/kidswikilogo2.png" alt=""></a>
+              <a style="width: 12%;  " href="/"><img src="./assets/img/Layer 2.png" alt=""></a>
+              <a style="width: 12%; " href="/"><img src="./assets/img/Group 84.png" alt=""></a>
+              <a style="width: 10%;"   href="/"><img src="./assets/img/logo-tcdc@2x.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ist sponcer  -->
+  </div>    
+  </div>
+</div>
+
+<!-- sponcers sec end -->
+<!-- footer sec start -->
+<footer class="footer relative border-b-2 border-blue-700 bg-gray-400 bg-cover" style="
+background-image: url('./assets/img/bg.png');
+min-height: 115vh;
+">
+<!-- foter links section start -->
+  <div class="container mx-auto px-6 w-10/12 ">
+
+      <div class="sm:flex sm:mt-8 pt-16">
+          <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+              <div class="flex flex-col">
+                  <span class="font-bold color uppercase mb-2 heading">ประสบการณ์สอนกว่า 50 ปี</span>
+                  <span class="my-2"><a href="#" class="text-blue-700  text-sm hover:text-blue-500"">จากรุ่นสู่รุ่น...</a></span>
+                  <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">ทับทอง DNA</a></span>
+                  <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">พันธมิตร</a></span>
+              </div>
+              <div class="flex flex-col">
+                  <span class="font-bold color uppercase mt-4 md:mt-0 mb-2 heading">การเรียนการสอน</span>
+                  <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">สร้างเสริมประสบการณ์</a></span>
+                  <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">การเรียนการสอน</a></span>
+                  <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">อนุบาล</a></span>
+                  <span class="my-2"><a href="#" class="text-blue-700 text-md hover:text-blue-500">ประถม</a></span>
+              </div>
+              <div class="flex flex-col">
+                  <span class="font-bold color uppercase mt-4 md:mt-0 mb-2 heading">หลักสูตรการสอน</span>
+                  <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">ระเบียบการ</a></span>
+                  <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">นโยบายการรับนักเรียน</a></span>
+                  <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">ค่าเล่าเรียน </a></span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold color uppercase mt-4 md:mt-0 mb-2 heading">ห้องเสมือน 360</span>
+                <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">ห้องเรียน</a></span>
+                <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">ห้องกิจกรรม</a></span>
+                <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">อาหารเพื่อสุขภาพ</a></span>
+            </div><div class="flex flex-col">
+              <span class="font-bold color uppercase mt-4 md:mt-0 mb-2 heading  ">ข่าว & กิจกรรม</span>
+              <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">กิจกรรมนักเรียน</a></span>
+              <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">ข่าว</a></span>
+              <span class="my-2"><a href="#" class="text-blue-700  text-md hover:text-blue-500">กิจกรรมโรงเรียน</a></span>
+          </div>
+          </div>
+      </div>
+  </div>
+<!-- foter links section end -->
+<!-- foter map/about section start -->
+
+<div class="container w-10/12 ml-auto mr-auto h-full flex flex-wrap items-center ">
+<!-- last sec image side start -->
+<div class=" sm:hidden   mr-auto " style="width: 30%; "></div> 
+<!-- last sec image side end -->
+<!-- last sec text/map side start -->
+
+<div class="md:w-4/12 flex justify-between mt-16" style="width: 65%; ">
+
+<!-- info sec start -->
+<div class="md:w-4/12" style="width: 50%;">
+  <div
+    class="
+      relative
+      flex flex-col
+      min-w-0
+      break-words
+      w-full
+      mb-6
+    "
+  >
+      <h6 class="color text-white heading 
+    " >
+    ติดต่อเรา
+      </h6>
+      <h1 class=" color w-full text-4xl font-bold my-4 heading">แขวงจันทรเกษม</h1>
+      
+      <div class="flex flex-col">
+        <span class="uppercase  md:mt-0 text-sm">ข104 ถนนพหลโยธิน 32</span>
+        <span class=""><a href="#" class="text-blue-700  text-sm hover:text-blue-500">แขวงจันทรเกษม เขตจตุจักร กทม 10900</a></span>
+        <span class=""><a href="#" class="text-blue-700  text-sm hover:text-blue-500">ขโทร 02-579-0982, 02-561-2004</a></span>
+        <span class=""><a href="#" class="text-blue-700  text-sm hover:text-blue-500">โทรสาร 02-561-2704</a></span>
+        <span class=""><a href="#" class="text-blue-700  text-sm hover:text-blue-500">อีเมลล์: tubtong@tubtong.ac.th</a></span>
+    </div>
+      
+    
+  </div>
+  
+</div>
+<!-- info sec end -->
+<!-- map sec start -->
+
+<div class="md:w-4/12" style="width: 70%; height: 50%;">
+  <div
+    class="
+      relative
+      flex flex-col
+      min-w-0
+      break-words
+      w-full
+      mb-6
+    "
+  >
+
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.1051462310265!2d100.57334261414391!3d13.832724299141534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29d028920498f%3A0x937d8a9a9ba28eee!2sTubtong%20School!5e0!3m2!1sen!2s!4v1624711538829!5m2!1sen!2s" 
+      width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
+  </div>
+  
+</div>
+<!-- map sec end --></div> 
+    
+  
+</div>
+<!-- social icons start -->
+<div class="container w-10/12  flex mr-auto ml-auto " style="margin-top: 25px;">
+  <!-- last sec image side start -->
+<div class="md:w-4/12 " style="width: 50%;"></div> 
+<!-- last sec image side end -->
+  <div class="w-full icons  flex justify-between pb-4 ">
+  <a  href="/"style="width: 12%; "><img src="./assets/img/Group 147.png" alt=""></a>
+  <a  href="/"style="width: 12%; "><img src="./assets/img/Group 150.png" alt=""></a>
+  <a  href="/"style="width: 12%; "><img src="./assets/img/Group 151.png" alt=""></a>
+  <a  href="/"style="width: 12%; "><img src="./assets/img/Group 154.png" alt=""></a>
+  <a  href="/"style="width: 12%; "><img src="./assets/img/Group 171.png" alt=""></a>
+  </div>
+</div>
+<!-- social icon end -->
+<!-- foter map/about section start -->
+
+
+  
+</footer>
+<!-- footer sec end -->
+<!-- copy right sec start -->
+<div class="bgcolor">
+      <div class="py-1 text-white w-10/12 ml-auto mr-auto">
+        <div class="container flex justify-between items-center ">
+          <div class=" sm:w-2/3 text-center items-center">
+              <p class="text-sm text-blue-700 px-12 ml-8 ">
+                  © โรงเรียนทับทอง 2021
+              </p>
+          </div>
+          <div class=" text-white sm:w-2/3 text-center ">
+            <p class="text-sm text-blue-700  ">
+              นโยบายความเป็นส่วนตัว
+            </p>
+          </div>
+      </div>
+  </div>
+<!-- copy right sec end -->
+          
+      
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
